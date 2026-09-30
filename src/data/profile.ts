@@ -111,6 +111,37 @@ export const CASE_FILES: CaseTile[] = [
   { id: 'CASE-26', name: 'Red Team C2 Lab', repo: `${GH}red-team-c2-lab`, tags: ['Sliver', 'ATT&CK', 'PtH'] },
 ];
 
+export const EDUCATION = [
+  {
+    dates: '2025 - 2027',
+    degree: 'MS, Cybersecurity',
+    school: 'Northeastern University, Khoury College of Computer Sciences',
+    note: 'GPA 3.86',
+  },
+  {
+    dates: '2021 - 2025',
+    degree: 'BTech, AI & Data Science',
+    school: 'Vardhaman College of Engineering',
+  },
+];
+
+// `href` links to the credential; entries without one have no public proof yet.
+export const CERTIFICATIONS: { name: string; href?: string; status?: string }[] = [
+  {
+    name: 'Google Cybersecurity Professional Certificate',
+    href: 'https://www.coursera.org/account/accomplishments/professional-cert/NJ06LAXOT3R4',
+  },
+  { name: 'CompTIA Security+', status: 'in progress' },
+  {
+    name: 'Deloitte Cybersecurity Job Simulation',
+    href: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_4yHEByFJwhmmE2ekD_1752754071792_completion_certificate.pdf',
+  },
+  {
+    name: 'Tata Cybersecurity Simulation',
+    href: 'https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_4yHEByFJwhmmE2ekD_1752751473837_completion_certificate.pdf',
+  },
+];
+
 export type WorkCard = {
   number: string;
   name: string;

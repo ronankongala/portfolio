@@ -91,7 +91,7 @@ export default function ExperienceSection() {
   const { scrollYProgress } = useScroll({ target: listRef, offset: ['start 60%', 'end 55%'] });
 
   return (
-    <section id="experience" className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-16 sm:pt-20 pb-32 sm:pb-40">
+    <section id="experience" className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-16 sm:pt-20 pb-16 sm:pb-20">
       <FadeIn
         as="h2"
         y={40}

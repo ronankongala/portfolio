@@ -3,6 +3,7 @@ import HeroSection from './sections/HeroSection';
 import CaseStripSection from './sections/CaseStripSection';
 import AboutSection from './sections/AboutSection';
 import ExperienceSection from './sections/ExperienceSection';
+import EducationSection from './sections/EducationSection';
 import WorkSection from './sections/WorkSection';
 import ContactSection from './sections/ContactSection';
 
@@ -13,6 +14,7 @@ export default function App() {
         <HeroSection />
         <AboutSection />
         <ExperienceSection />
+        <EducationSection />
         <CaseStripSection />
         <WorkSection />
         <ContactSection />

@@ -36,6 +36,7 @@ src/data/profile.ts
 - `PROFILE` and `NAV_LINKS`: name, tagline, email, phone, links.
 - `CASE_FILES`: the scrolling index (add a new case, it appears in the strip and links to its repo).
 - `EXPERIENCE`: the timeline entries, newest first, with an optional headline stat.
+- `EDUCATION` and `CERTIFICATIONS`: degrees and cert pills (add `href` to link a credential).
 - `WORK`: the flagship cards in the swipe rail, including their stat lines.
 
 
@@ -68,6 +69,7 @@ src/
     CaseStripSection.tsx  compact grid of every case file
     AboutSection.tsx      compact bio band with character reveal
     ExperienceSection.tsx scroll-drawn timeline, stat per role
+    EducationSection.tsx  compact degrees + certification pills
     WorkSection.tsx       swipeable rail of small flagship cards
     ContactSection.tsx    contact + footer
 ```
