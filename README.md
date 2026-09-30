@@ -42,10 +42,17 @@ src/data/profile.ts
 
 ## Hero avatar
 
-The hero centerpiece is your 3D avatar at `public/ronan-hero.png`, a transparent
-cutout floated frameless over the name with a soft drop shadow (the original
-template look). To change it, drop a new transparent PNG over
-`public/ronan-hero.png` (keep that filename) and rebuild.
+The hero centerpiece is a two-layer 3D avatar (`src/components/HeroAvatar.tsx`):
+
+- `public/hero-suspicious-base.png` with blank eyes, plus `hero-eye-left.png` and
+  `hero-eye-right.png` irises that follow the cursor inside clipped eye sockets.
+  The socket geometry in `HeroAvatar.tsx` is measured from the base image, so a
+  new base needs new numbers.
+- `public/ronan-hero.png`, the calm face, crossfaded in on hover.
+
+Both faces must share the same pixel size (currently 1254x1215) or the hover
+crossfade jumps. Keep hair and beard fully opaque in both; on this dark page any
+background-removal holes show as black patches.
 
 Alternative photos are kept out of the repo (`extra-photos/` is gitignored).
 
@@ -66,6 +73,7 @@ src/
     GhostButton.tsx       outline pill (repo links, contact links)
   sections/
     HeroSection.tsx       nav, giant gradient name, magnetic avatar, tagline
+    ../components/HeroAvatar.tsx  cursor-tracking eyes, calm face on hover
     CaseStripSection.tsx  compact grid of every case file
     AboutSection.tsx      compact bio band with character reveal
     ExperienceSection.tsx scroll-drawn timeline, stat per role
