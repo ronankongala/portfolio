@@ -1,6 +1,7 @@
 import FadeIn from '../components/FadeIn';
 import Magnet from '../components/Magnet';
 import ContactButton from '../components/ContactButton';
+import CursorTilt from '../components/CursorTilt';
 import { NAV_LINKS, PROFILE } from '../data/profile';
 
 export default function HeroSection() {
@@ -28,7 +29,7 @@ export default function HeroSection() {
           as="h1"
           delay={0.15}
           y={40}
-          className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[14vw] sm:text-[15vw] md:text-[16vw] lg:text-[17.5vw]"
+          className="hero-heading font-black uppercase tracking-tight leading-none whitespace-nowrap w-full text-center text-[14vw] md:text-[15vw]"
         >
           {PROFILE.name}
         </FadeIn>
@@ -44,13 +45,15 @@ export default function HeroSection() {
             activeTransition="transform 0.3s ease-out"
             inactiveTransition="transform 0.6s ease-in-out"
           >
-            <img
-              src={`${import.meta.env.BASE_URL}ronan-hero.png`}
-              alt="Ronan Kongala"
-              draggable={false}
-              className="block w-full h-auto select-none"
-              style={{ filter: 'drop-shadow(0 26px 55px rgba(0,0,0,0.55))' }}
-            />
+            <CursorTilt>
+              <img
+                src={`${import.meta.env.BASE_URL}ronan-hero.png`}
+                alt="Ronan Kongala"
+                draggable={false}
+                className="block w-full h-auto select-none"
+                style={{ filter: 'drop-shadow(0 26px 55px rgba(0,0,0,0.55))' }}
+              />
+            </CursorTilt>
           </Magnet>
         </FadeIn>
       </div>
