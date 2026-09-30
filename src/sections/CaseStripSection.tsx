@@ -24,10 +24,19 @@ function CaseTile({ item }: { item: (typeof CASE_FILES)[number] }) {
 export default function CaseStripSection() {
   return (
     <section
-      className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-24 sm:pt-32 md:pt-40 pb-10"
+      id="projects"
+      className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-4 pb-12"
       aria-label={`Case file index, ${CASE_FILES.length} security builds linking to GitHub`}
     >
       <div className="max-w-7xl mx-auto">
+        <FadeIn
+          as="h2"
+          y={40}
+          className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-10 sm:mb-12"
+          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+        >
+          Projects
+        </FadeIn>
         <div className="mb-5 flex flex-wrap items-end justify-between gap-2">
           <p className="font-mono text-xs tracking-[0.3em] text-[#D7E2EA]/40 uppercase">
             Case file index // {CASE_FILES.length} builds

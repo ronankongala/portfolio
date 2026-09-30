@@ -11,9 +11,9 @@ export default function App() {
     <MotionConfig reducedMotion="user">
       <main style={{ background: '#0C0C0C', overflowX: 'clip' }}>
         <HeroSection />
-        <CaseStripSection />
         <AboutSection />
         <ExperienceSection />
+        <CaseStripSection />
         <WorkSection />
         <ContactSection />
       </main>
