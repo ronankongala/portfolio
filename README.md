@@ -35,7 +35,6 @@ src/data/profile.ts
 
 - `PROFILE` and `NAV_LINKS`: name, tagline, email, phone, links.
 - `CASE_FILES`: the scrolling index (add a new case, it appears in the strip and links to its repo).
-- `CAPABILITIES`: the five capability blocks.
 - `WORK`: the four flagship cards, including the stat lines shown in each signal panel.
 
 
@@ -67,7 +66,6 @@ src/
     HeroSection.tsx       nav, giant gradient name, magnetic terminal, tagline
     CaseStripSection.tsx  two-row scroll index of all 24 case files
     AboutSection.tsx      corner glyphs + character-reveal bio
-    CapabilitiesSection.tsx  white spotlight section, five areas
     WorkSection.tsx       sticky scale-stacking flagship cards
     ContactSection.tsx    contact + footer
 ```

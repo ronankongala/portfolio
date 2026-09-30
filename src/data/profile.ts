@@ -11,7 +11,6 @@ export const PROFILE = {
 
 export const NAV_LINKS = [
   { label: 'About', href: '#about' },
-  { label: 'Capabilities', href: '#capabilities' },
   { label: 'Work', href: '#work' },
   { label: 'Contact', href: '#contact' },
 ];
@@ -48,41 +47,6 @@ export const CASE_FILES: CaseTile[] = [
   { id: 'CASE-23', name: 'VulnTrack', repo: `${GH}vulntrack`, tags: ['Spring', 'React', 'K8s'] },
   { id: 'CASE-25', name: 'FraudSentry', repo: `${GH}fraudsentry`, tags: ['XGBoost', 'SHAP', 'GDPR'] },
   { id: 'CASE-26', name: 'Red Team C2 Lab', repo: `${GH}red-team-c2-lab`, tags: ['Sliver', 'ATT&CK', 'PtH'] },
-];
-
-export type Capability = { number: string; name: string; description: string };
-
-export const CAPABILITIES: Capability[] = [
-  {
-    number: '01',
-    name: 'Detection Engineering',
-    description:
-      'SIEM detections and alert-triage pipelines that turn raw telemetry into ranked, actionable signal, with findings mapped to MITRE ATT&CK. Splunk, Microsoft Sentinel, KQL, and Suricata.',
-  },
-  {
-    number: '02',
-    name: 'Cloud Security',
-    description:
-      'Security tooling and detection across AWS, Azure, and GCP: CloudTrail and GuardDuty pipelines, S3 posture auditing, and serverless alerting built with boto3 and Lambda.',
-  },
-  {
-    number: '03',
-    name: 'Malware Analysis & Forensics',
-    description:
-      'Static and dynamic malware analysis, memory forensics, and network beacon hunting that end in extracted indicators and a written report. Ghidra, YARA, CAPA, and Volatility.',
-  },
-  {
-    number: '04',
-    name: 'GRC & Compliance',
-    description:
-      'Control mapping and system hardening against SOC 2, NIST 800-53 and CSF, ISO 27001, PCI DSS, and FedRAMP RMF, including quarterly access reviews and POAMs.',
-  },
-  {
-    number: '05',
-    name: 'Security Automation & AI',
-    description:
-      'SOAR playbooks, agentic SOC tooling, and LLM security work such as access-governed RAG, prompt-injection defense, and audit logging around model access.',
-  },
 ];
 
 export type WorkCard = {
