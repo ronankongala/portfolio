@@ -37,7 +37,7 @@ export default function HeroSection() {
 
       {/* Hero avatar. Transparent cutout floated frameless over the name. Swap the file
           at public/ronan-hero.png (keep the name) to change it. */}
-      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[300px] sm:w-[380px] md:w-[460px] lg:w-[520px] top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0">
+      <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[270px] sm:w-[342px] md:w-[414px] lg:w-[468px] top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0">
         <FadeIn delay={0.6} y={30}>
           <Magnet
             padding={150}
