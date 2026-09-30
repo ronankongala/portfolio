@@ -9,12 +9,12 @@ export default function EducationSection() {
     <section id="education" className="px-5 sm:px-8 md:px-10 pb-20 sm:pb-24">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[220px_1fr] gap-4 md:gap-12 border-t border-[#D7E2EA]/10 pt-10">
         <FadeIn y={20}>
-          <p className="font-mono text-xs tracking-[0.3em] text-[#D7E2EA]/40 uppercase">Education</p>
           <h2
-            className="hero-heading font-black uppercase leading-none tracking-tight mt-2 whitespace-nowrap"
+            className="hero-heading font-black uppercase leading-none tracking-tight whitespace-nowrap"
             style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)' }}
           >
-            & Certs
+            Education
+            <br />& Certs
           </h2>
         </FadeIn>
 
