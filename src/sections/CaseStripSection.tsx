@@ -15,7 +15,7 @@ function CaseTile({ item }: { item: (typeof CASE_FILES)[number] }) {
           &#8599;
         </span>
       </span>
-      <h3 className="text-[#D7E2EA] font-medium text-[0.83125rem] sm:text-[0.95rem] leading-snug">{item.name}</h3>
+      <h3 className="text-[#D7E2EA] font-medium text-sm sm:text-base leading-snug">{item.name}</h3>
       <p className="mt-auto font-mono text-[0.65rem] text-[#D7E2EA]/40 truncate">{item.tags.join(' · ')}</p>
     </a>
   );
@@ -33,7 +33,7 @@ export default function CaseStripSection() {
           as="h2"
           y={40}
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-10 sm:mb-12"
-          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          style={{ fontSize: 'clamp(2.85rem, 11.4vw, 152px)' }}
         >
           Projects
         </FadeIn>

@@ -59,7 +59,7 @@ export default function WorkSection() {
           as="h2"
           y={40}
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-4"
-          style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
+          style={{ fontSize: 'clamp(2.85rem, 11.4vw, 152px)' }}
         >
           Selected work
         </FadeIn>
