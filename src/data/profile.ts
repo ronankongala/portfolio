@@ -11,8 +11,70 @@ export const PROFILE = {
 
 export const NAV_LINKS = [
   { label: 'About', href: '#about' },
+  { label: 'Experience', href: '#experience' },
   { label: 'Work', href: '#work' },
   { label: 'Contact', href: '#contact' },
+];
+
+// Newest first. `stat` is the headline number already stated in `desc`.
+export type Role = {
+  date: string;
+  role: string;
+  org: string;
+  desc: string;
+  current?: boolean;
+  stat?: { value: string; label: string };
+};
+
+export const EXPERIENCE: Role[] = [
+  {
+    date: 'Sep 2026 - Present',
+    role: 'AI Cybersecurity Intern',
+    org: 'Abbott · Madison, WI (Hybrid)',
+    current: true,
+    stat: { value: '22,000+', label: 'vulnerabilities tracked' },
+    desc: "Contributing to ExmanIq, an internal vulnerability management platform monitoring 22,000+ tracked vulnerabilities across organizational assets using a predictive Impact x Likelihood risk model enriched with EPSS and NVD threat intelligence. Diagnosed a 27-day silent data-pipeline failure by recognizing an anomalous flat trend in the platform's composite risk score. Also built CrowdCheck Hive with a teammate, correlating CrowdStrike, Microsoft Intune, and ServiceNow CMDB data to identify device coverage gaps across the organization's endpoint security controls.",
+  },
+  {
+    date: 'Jun 2026 - Sep 2026',
+    role: 'Cybersecurity Intern',
+    org: 'Exact Sciences · Madison, WI (Hybrid)',
+    stat: { value: '1,300+', label: 'app registrations scanned' },
+    desc: 'Built Baseline Guardian with a teammate, correlating data across multiple internal systems (CrowdStrike, Microsoft Intune, Tanium, ServiceNow CMDB) to assess security posture and endpoint compliance. Automated KeyCheck, a credential-risk monitoring pipeline scanning 1,300+ application registrations to identify expiring-credential risk before it became an incident.',
+  },
+  {
+    date: 'Jan 2026 - Apr 2026',
+    role: 'Teaching Assistant, CY5001',
+    org: 'Northeastern University, Khoury College',
+    stat: { value: '61', label: 'graduate students' },
+    desc: 'Ran lab sessions and graded 200+ assignments for 61 graduate students in Cybersecurity Threats and Defenses, resolving 150+ Piazza queries within a 24-hour SLA and cutting lab completion time by 30%.',
+  },
+  {
+    date: '2025',
+    role: 'First author, IEEE ICAISS',
+    org: 'Fake job posting detection research',
+    stat: { value: '98%', label: 'accuracy, 9,000+ postings' },
+    desc: 'Published an ensemble ML approach (Random Forest, Gradient Boosting, XGBoost, AdaBoost with SMOTE) reaching 98% accuracy across 9,000+ postings.',
+  },
+  {
+    date: 'Aug 2024 - Oct 2024',
+    role: 'Cybersecurity Intern',
+    org: 'NIELIT Virtual Academy, Ministry of Electronics and IT',
+    stat: { value: '3', label: 'live environments assessed' },
+    desc: 'Conducted network security assessments across 3 live environments, applying threat modeling with Nmap and Docker, and used Random Forest models to detect anomalies in security data.',
+  },
+  {
+    date: 'Feb 2024 - Apr 2024',
+    role: 'Web Development Trainee',
+    org: 'Quizaro ExtendedEdge · Remote',
+    desc: 'Completed an ISO 9001:2015 certified specialization covering frontend architecture and modern web technologies.',
+  },
+  {
+    date: 'Oct 2023 - Nov 2023',
+    role: 'Data Science Analyst Intern',
+    org: 'Rejolt Edtech Pvt Ltd · Hyderabad, India',
+    desc: 'Built and automated data extraction pipelines with Python (NumPy, Pandas, scikit-learn) to streamline client reporting workflows.',
+  },
 ];
 
 export const ABOUT_TEXT =

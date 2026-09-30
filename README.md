@@ -35,7 +35,8 @@ src/data/profile.ts
 
 - `PROFILE` and `NAV_LINKS`: name, tagline, email, phone, links.
 - `CASE_FILES`: the scrolling index (add a new case, it appears in the strip and links to its repo).
-- `WORK`: the four flagship cards, including the stat lines shown in each signal panel.
+- `EXPERIENCE`: the timeline entries, newest first, with an optional headline stat.
+- `WORK`: the flagship cards in the swipe rail, including their stat lines.
 
 
 ## Hero avatar
@@ -58,14 +59,16 @@ src/
     FadeIn.tsx            whileInView wrapper on motion.create()
     Magnet.tsx            mouse-following magnetic hover (disabled under reduced motion)
     AnimatedText.tsx      per-character scroll-driven opacity reveal
-    SignalPanel.tsx       terminal-style stat readout (replaces project screenshots)
+    CursorTilt.tsx        pointer-follow 3D tilt on the hero avatar
+    ArrowButton.tsx       round prev/next button for the work rail
     Tag.tsx               tech tag pill
     ContactButton.tsx     gradient pill CTA
     GhostButton.tsx       outline pill (repo links, contact links)
   sections/
-    HeroSection.tsx       nav, giant gradient name, magnetic terminal, tagline
-    CaseStripSection.tsx  two-row draggable, looping index of every case file
+    HeroSection.tsx       nav, giant gradient name, tilting avatar, tagline
+    CaseStripSection.tsx  compact grid of every case file
     AboutSection.tsx      corner glyphs + character-reveal bio
-    WorkSection.tsx       sticky scale-stacking flagship cards
+    ExperienceSection.tsx scroll-drawn timeline, stat per role
+    WorkSection.tsx       swipeable rail of small flagship cards
     ContactSection.tsx    contact + footer
 ```
