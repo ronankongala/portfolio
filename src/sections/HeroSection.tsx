@@ -1,7 +1,6 @@
 import FadeIn from '../components/FadeIn';
 import Magnet from '../components/Magnet';
 import ContactButton from '../components/ContactButton';
-import HeroAvatar from '../components/HeroAvatar';
 import { NAV_LINKS, PROFILE } from '../data/profile';
 
 export default function HeroSection() {
@@ -35,7 +34,8 @@ export default function HeroSection() {
         </FadeIn>
       </div>
 
-      {/* Hero avatar: suspicious eyes track the cursor; hover reveals the calm photo. */}
+      {/* Hero avatar. Transparent cutout floated frameless over the name. Swap the file
+          at public/ronan-hero.png (keep the name) to change it. */}
       <div className="absolute left-1/2 -translate-x-1/2 z-10 w-[270px] sm:w-[342px] md:w-[414px] lg:w-[468px] top-1/2 -translate-y-1/2 sm:top-auto sm:translate-y-0 sm:bottom-0">
         <FadeIn delay={0.6} y={30}>
           <Magnet
@@ -44,7 +44,13 @@ export default function HeroSection() {
             activeTransition="transform 0.3s ease-out"
             inactiveTransition="transform 0.6s ease-in-out"
           >
-            <HeroAvatar />
+            <img
+              src={`${import.meta.env.BASE_URL}ronan-hero.png`}
+              alt="Ronan Kongala"
+              draggable={false}
+              className="block w-full h-auto select-none"
+              style={{ filter: 'drop-shadow(0 26px 55px rgba(0,0,0,0.55))' }}
+            />
           </Magnet>
         </FadeIn>
       </div>
