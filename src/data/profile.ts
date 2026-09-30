@@ -18,7 +18,7 @@ export const NAV_LINKS = [
 export const ABOUT_TEXT =
   'I turn messy streams of logs and controls into clear, defensible answers. My work sits across detection engineering, cloud security, and governance, usually built end to end from ingest to detection to written report.';
 
-// The 24 case files, each linking to its real repository.
+// Every case file, each linking to its real repository.
 type CaseTile = { id: string; name: string; repo: string; tags: string[] };
 
 const GH = 'https://github.com/ronankongala/';

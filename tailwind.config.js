@@ -12,6 +12,15 @@ export default {
         mist: '#D7E2EA',
         steel: '#646973',
       },
+      keyframes: {
+        nudge: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(6px)' },
+        },
+      },
+      animation: {
+        nudge: 'nudge 1.4s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

@@ -64,7 +64,7 @@ src/
     GhostButton.tsx       outline pill (repo links, contact links)
   sections/
     HeroSection.tsx       nav, giant gradient name, magnetic terminal, tagline
-    CaseStripSection.tsx  two-row scroll index of all 24 case files
+    CaseStripSection.tsx  two-row draggable, looping index of every case file
     AboutSection.tsx      corner glyphs + character-reveal bio
     WorkSection.tsx       sticky scale-stacking flagship cards
     ContactSection.tsx    contact + footer

@@ -4,7 +4,7 @@ import FadeIn from '../components/FadeIn';
 import GhostButton from '../components/GhostButton';
 import SignalPanel from '../components/SignalPanel';
 import Tag from '../components/Tag';
-import { WORK, WorkCard } from '../data/profile';
+import { CASE_FILES, WORK, WorkCard } from '../data/profile';
 
 const RADIUS = 'rounded-[40px] sm:rounded-[50px] md:rounded-[60px]';
 
@@ -96,7 +96,7 @@ export default function WorkSection() {
         className="text-center text-[#D7E2EA]/50 font-light mb-16 sm:mb-20 md:mb-24"
         style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.15rem)' }}
       >
-        Four flagship builds. The full index of 24 is in the strip above.
+        Four flagship builds. The full index of {CASE_FILES.length} is in the strip above.
       </FadeIn>
 
       <div ref={containerRef} className="max-w-6xl mx-auto">
