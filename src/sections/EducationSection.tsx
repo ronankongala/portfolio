@@ -6,16 +6,22 @@ const PILL =
 
 export default function EducationSection() {
   return (
-    <section id="education" className="px-5 sm:px-8 md:px-10 pb-20 sm:pb-24">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-[220px_1fr] gap-4 md:gap-12 border-t border-[#D7E2EA]/10 pt-10">
-        <FadeIn y={20}>
-          <p className="font-mono text-xs tracking-[0.3em] text-[#D7E2EA]/40 uppercase">Education</p>
-          <h2
-            className="hero-heading font-black uppercase leading-none tracking-tight mt-2 whitespace-nowrap"
-            style={{ fontSize: 'clamp(1.8rem, 3vw, 2.4rem)' }}
-          >
-            & Certs
-          </h2>
+    <section id="education" className="px-5 sm:px-8 md:px-10 pt-8 pb-20 sm:pb-24">
+      <div className="max-w-6xl mx-auto">
+        <FadeIn
+          as="h2"
+          y={40}
+          className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-4"
+          style={{ fontSize: 'clamp(2.85rem, 11.4vw, 152px)' }}
+        >
+          Education
+        </FadeIn>
+        <FadeIn
+          delay={0.1}
+          className="text-center text-[#D7E2EA]/50 font-light mb-10 sm:mb-12"
+          style={{ fontSize: 'clamp(0.9rem, 1.6vw, 1.15rem)' }}
+        >
+          Degrees and certifications
         </FadeIn>
 
         <div className="flex flex-col gap-5">
@@ -37,7 +43,7 @@ export default function EducationSection() {
           </div>
 
           <FadeIn delay={0.15} y={16}>
-            <ul className="flex flex-wrap gap-2">
+            <ul className="flex flex-wrap justify-center gap-2">
               {CERTIFICATIONS.map((c) => (
                 <li key={c.name}>
                   {c.href ? (
