@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import ArrowButton from '../components/ArrowButton';
 import FadeIn from '../components/FadeIn';
 import Tag from '../components/Tag';
-import { WORK, WorkCard } from '../data/profile';
+import { PROFILE, WORK, WorkCard } from '../data/profile';
 
 function ProjectCard({ card }: { card: WorkCard }) {
   return (
@@ -42,6 +42,23 @@ function ProjectCard({ card }: { card: WorkCard }) {
   );
 }
 
+function SeeMoreCard() {
+  return (
+    <a
+      href={`${PROFILE.github}?tab=repositories`}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group snap-start shrink-0 w-[82vw] max-w-[340px] sm:w-[340px] rounded-3xl border border-dashed border-[#D7E2EA]/25 bg-[#111317] p-5 sm:p-6 flex flex-col items-center justify-center gap-4 text-center transition-colors duration-200 hover:border-[#79E0B8]/60"
+    >
+      <span className="flex h-16 w-16 items-center justify-center rounded-full border border-[#D7E2EA]/40 text-2xl text-[#D7E2EA] transition-transform duration-200 group-hover:translate-x-1">
+        &rarr;
+      </span>
+      <h3 className="text-[#D7E2EA] font-medium uppercase leading-tight text-lg">See more</h3>
+      <p className="font-mono text-xs text-[#79E0B8]/80">Every build on GitHub &#8599;</p>
+    </a>
+  );
+}
+
 export default function WorkSection() {
   const railRef = useRef<HTMLDivElement>(null);
 
@@ -53,7 +70,7 @@ export default function WorkSection() {
   };
 
   return (
-    <section id="work" className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-16 sm:pt-20 pb-24">
+    <section id="projects" className="bg-[#0C0C0C] px-5 sm:px-8 md:px-10 pt-16 sm:pt-20 pb-24">
       <div className="max-w-7xl mx-auto">
         <FadeIn
           as="h2"
@@ -61,7 +78,7 @@ export default function WorkSection() {
           className="hero-heading font-black uppercase leading-none tracking-tight text-center mb-4"
           style={{ fontSize: 'clamp(2.85rem, 11.4vw, 152px)' }}
         >
-          Selected work
+          Projects
         </FadeIn>
         <FadeIn
           delay={0.1}
@@ -87,11 +104,12 @@ export default function WorkSection() {
         <div
           ref={railRef}
           className="no-scrollbar flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2"
-          aria-label="Selected work, swipe horizontally"
+          aria-label="Projects, swipe horizontally"
         >
           {WORK.map((card) => (
             <ProjectCard key={card.number} card={card} />
           ))}
+          <SeeMoreCard />
         </div>
       </div>
     </section>
