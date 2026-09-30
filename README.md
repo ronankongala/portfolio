@@ -2,7 +2,7 @@
 
 Personal cybersecurity portfolio for Ronan Kongala, live at https://ronankongala.github.io/portfolio/. React + TypeScript + Tailwind CSS + Framer Motion, built with Vite.
 
-Dark editorial theme (Kanit display type, IBM Plex Mono for terminal and data), a magnetic terminal centerpiece, a scroll-driven index of every case file, a character-reveal about section, and sticky scale-stacking project cards.
+Dark editorial theme (Kanit display type, IBM Plex Mono for terminal and data), a magnetic terminal centerpiece, a character-reveal about section, and sticky scale-stacking project cards.
 
 ## Run locally
 
@@ -34,7 +34,6 @@ src/data/profile.ts
 ```
 
 - `PROFILE` and `NAV_LINKS`: name, tagline, email, phone, links.
-- `CASE_FILES`: the scrolling index (add a new case, it appears in the strip and links to its repo).
 - `EXPERIENCE`: the timeline entries, newest first, with an optional headline stat.
 - `EDUCATION` and `CERTIFICATIONS`: degrees and cert pills (add `href` to link a credential).
 - `WORK`: the flagship cards in the swipe rail, including their stat lines.
@@ -66,7 +65,6 @@ src/
     GhostButton.tsx       outline pill (repo links, contact links)
   sections/
     HeroSection.tsx       nav, giant gradient name, magnetic avatar, tagline
-    CaseStripSection.tsx  compact grid of every case file
     AboutSection.tsx      compact bio band with character reveal
     ExperienceSection.tsx scroll-drawn timeline, stat per role
     EducationSection.tsx  compact degrees + certification pills
