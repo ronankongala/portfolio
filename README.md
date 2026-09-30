@@ -59,13 +59,12 @@ src/
     FadeIn.tsx            whileInView wrapper on motion.create()
     Magnet.tsx            mouse-following magnetic hover (disabled under reduced motion)
     AnimatedText.tsx      per-character scroll-driven opacity reveal
-    CursorTilt.tsx        pointer-follow 3D tilt on the hero avatar
     ArrowButton.tsx       round prev/next button for the work rail
     Tag.tsx               tech tag pill
     ContactButton.tsx     gradient pill CTA
     GhostButton.tsx       outline pill (repo links, contact links)
   sections/
-    HeroSection.tsx       nav, giant gradient name, tilting avatar, tagline
+    HeroSection.tsx       nav, giant gradient name, magnetic avatar, tagline
     CaseStripSection.tsx  compact grid of every case file
     AboutSection.tsx      corner glyphs + character-reveal bio
     ExperienceSection.tsx scroll-drawn timeline, stat per role
