@@ -66,7 +66,7 @@ src/
   sections/
     HeroSection.tsx       nav, giant gradient name, magnetic avatar, tagline
     CaseStripSection.tsx  compact grid of every case file
-    AboutSection.tsx      corner glyphs + character-reveal bio
+    AboutSection.tsx      compact bio band with character reveal
     ExperienceSection.tsx scroll-drawn timeline, stat per role
     WorkSection.tsx       swipeable rail of small flagship cards
     ContactSection.tsx    contact + footer
