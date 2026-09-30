@@ -65,7 +65,6 @@ src/
   data/profile.ts         all content and copy
   components/
     FadeIn.tsx            whileInView wrapper on motion.create()
-    HeroAvatar.tsx        cursor-tracking eyes, calm face crossfaded in on hover
     Magnet.tsx            mouse-following magnetic hover (disabled under reduced motion)
     AnimatedText.tsx      per-character scroll-driven opacity reveal
     ArrowButton.tsx       round prev/next button for the work rail
@@ -74,6 +73,7 @@ src/
     GhostButton.tsx       outline pill (repo links, contact links)
   sections/
     HeroSection.tsx       nav, giant gradient name, magnetic avatar, tagline
+    ../components/HeroAvatar.tsx  cursor-tracking eyes, calm face on hover
     CaseStripSection.tsx  compact grid of every case file
     AboutSection.tsx      compact bio band with character reveal
     ExperienceSection.tsx scroll-drawn timeline, stat per role
