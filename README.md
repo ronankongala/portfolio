@@ -1,6 +1,6 @@
-# portfolio-3d
+# portfolio
 
-Personal cybersecurity portfolio for Ronan Kongala, live at https://ronankongala.github.io/portfolio-3d/. React + TypeScript + Tailwind CSS + Framer Motion, built with Vite.
+Personal cybersecurity portfolio for Ronan Kongala, live at https://ronankongala.github.io/portfolio/. React + TypeScript + Tailwind CSS + Framer Motion, built with Vite.
 
 Dark editorial theme (Kanit display type, IBM Plex Mono for terminal and data), a magnetic terminal centerpiece, a scroll-driven index of every case file, a character-reveal about section, and sticky scale-stacking project cards.
 
@@ -15,7 +15,7 @@ Production build: `npm run build` then `npm run preview`.
 
 ## Deploy to GitHub Pages
 
-This repo (`portfolio-3d`) is a project page served from `/portfolio-3d/`, so `vite.config.ts` sets `base: '/portfolio-3d/'`. Keep that value in sync if the repo is ever renamed.
+This repo (`portfolio`) is a project page served from `/portfolio/`, so `vite.config.ts` sets `base: '/portfolio/'`. Keep that value in sync if the repo is ever renamed.
 
 An Actions workflow is already included at `.github/workflows/deploy.yml`. To use it:
 

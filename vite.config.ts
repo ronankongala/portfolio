@@ -7,6 +7,6 @@ import react from '@vitejs/plugin-react';
 // The hero image is referenced via import.meta.env.BASE_URL, so it follows this
 // automatically once base is set correctly.
 export default defineConfig({
-  base: '/portfolio-3d/',
+  base: '/portfolio/',
   plugins: [react()],
 });
