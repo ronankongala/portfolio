@@ -2,7 +2,7 @@
 
 Personal cybersecurity portfolio for Ronan Kongala, live at https://ronankongala.github.io/portfolio/. React + TypeScript + Tailwind CSS + Framer Motion, built with Vite.
 
-Dark editorial theme (Kanit display type, IBM Plex Mono for terminal and data), a magnetic terminal centerpiece, a character-reveal about section, and sticky scale-stacking project cards.
+Dark editorial theme (Kanit display type, IBM Plex Mono for data and labels), a magnetic hero avatar, a character-reveal about section, a scroll-drawn experience timeline, and a swipeable rail of project cards.
 
 ## Run locally
 
@@ -27,7 +27,7 @@ Manual alternative: run `npm run build` and serve the contents of `dist/` howeve
 
 ## Where to edit content
 
-Everything you would change day to day lives in one file:
+Day-to-day content lives in one file:
 
 ```
 src/data/profile.ts
@@ -41,9 +41,9 @@ src/data/profile.ts
 
 ## Hero avatar
 
-The hero centerpiece is your 3D avatar at `public/ronan-hero.png`, a transparent
-cutout floated frameless over the name with a soft drop shadow (the original
-template look). To change it, drop a new transparent PNG over
+The hero centerpiece is the 3D avatar at `public/ronan-hero.png`, a transparent
+cutout floated over the name with a soft drop shadow. It follows the mouse
+through the `Magnet` component. To change it, drop a new transparent PNG over
 `public/ronan-hero.png` (keep that filename) and rebuild.
 
 Alternative photos are kept out of the repo (`extra-photos/` is gitignored).

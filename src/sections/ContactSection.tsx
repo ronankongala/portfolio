@@ -26,8 +26,8 @@ export default function ContactSection() {
             className="text-[#D7E2EA]/65 font-light max-w-2xl leading-relaxed"
             style={{ fontSize: 'clamp(0.95rem, 1.8vw, 1.25rem)' }}
           >
-            SOC, detection engineering, malware analysis, threat intelligence, GRC, or vulnerability
-            management. If there is a fit, I would like to hear about it.
+            SOC and detection engineering, malware analysis, cloud security, vulnerability
+            management, GRC, and AI/LLM security. If there is a fit, I would like to hear about it.
           </p>
         </FadeIn>
         <FadeIn delay={0.2}>
