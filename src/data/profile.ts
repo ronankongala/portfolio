@@ -126,6 +126,16 @@ export type WorkCard = {
 export const WORK: WorkCard[] = [
   {
     number: '01',
+    name: 'EC2 Vulnerability Lab',
+    category: 'Cloud Security / Remediation',
+    repo: `${GH}ec2-vuln-lab`,
+    description:
+      'An intentionally vulnerable AWS EC2 target built with Terraform. Nine cloud misconfigurations are found by a read-only scanner, then fixed through approval-gated rules with dry-run preview, rollback, and post-fix verification. Six of nine are closed; three need a rebuild or design change and stay open by design. Includes a local dashboard and an audit log.',
+    stats: ['9 misconfigurations found', '6 of 9 closed', 'Dry-run + rollback'],
+    tags: ['Terraform', 'AWS EC2', 'Python', 'FastAPI', 'Systems Manager', 'Inspector', 'Security Hub'],
+  },
+  {
+    number: '02',
     name: 'Cloud OT Honeypot',
     category: 'Cloud Detection / Deception',
     repo: `${GH}ot-honeypot-gcp`,
@@ -135,7 +145,7 @@ export const WORK: WorkCard[] = [
     tags: ['T-Pot', 'Conpot', 'Cowrie', 'Suricata', 'Splunk Cloud'],
   },
   {
-    number: '02',
+    number: '03',
     name: 'Malware Analysis Lab',
     category: 'Malware Analysis / Forensics',
     repo: `${GH}malware-analysis-lab`,
@@ -145,7 +155,7 @@ export const WORK: WorkCard[] = [
     tags: ['PEStudio', 'CAPA', 'CAPE Sandbox', 'Any.run', 'FlareVM'],
   },
   {
-    number: '03',
+    number: '04',
     name: 'Red Team C2 Lab',
     category: 'Adversary Emulation / Detection',
     repo: `${GH}red-team-c2-lab`,
@@ -155,7 +165,7 @@ export const WORK: WorkCard[] = [
     tags: ['Sliver C2', 'impacket', 'pypykatz', 'ATT&CK Navigator'],
   },
   {
-    number: '04',
+    number: '05',
     name: 'FraudSentry',
     category: 'AI / ML Security',
     repo: `${GH}fraudsentry`,
