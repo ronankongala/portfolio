@@ -174,4 +174,14 @@ export const WORK: WorkCard[] = [
     stats: ['118,108-txn IEEE-CIS test set', 'RandomForest ROC-AUC 0.748', '23.7-pt FPR disparity found'],
     tags: ['XGBoost', 'SHAP', 'imblearn', 'SQLite'],
   },
+  {
+    number: '06',
+    name: 'Android Threat Engine',
+    category: 'Mobile Security / Threat Modeling',
+    repo: `${GH}android-threat-model`,
+    description:
+      'An Android app security research project built on the Ghera benchmark repository. It pairs code-referenced threat models and standards mappings with a command line tool that decodes an APK with apktool and reports its manifest attack surface, scored against a ground truth dataset. A Step 1 emulator smoke test confirmed a broadcast receiver exploit fires against the Benign app and is blocked by the Secure app.',
+    stats: ['57 Ghera benchmarks', '24 threat models', '234 benchmark differences logged'],
+    tags: ['Android', 'Ghera', 'apktool', 'STRIDE', 'CWE', 'OWASP MASVS'],
+  },
 ];
