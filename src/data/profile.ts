@@ -181,7 +181,7 @@ export const WORK: WorkCard[] = [
     repo: `${GH}android-threat-model`,
     description:
       'A complete Android app security research project built on the Ghera benchmark repository. It pairs code-referenced threat models and standards mappings with a command line tool that runs a 4-layer analysis on an APK (manifest attack surface, smali code patterns, interprocedural taint tracking and dynamic testing on an emulator over adb), scored against a ground truth dataset.',
-    stats: ['57 Ghera benchmarks', '24 threat models + 31 mappings', '0.98 recall / 0.74 precision'],
+    stats: ['57 Ghera benchmarks', '24 threat models + 31 mappings', '0.98 recall / 0.79 precision'],
     tags: ['Android', 'Ghera', 'apktool', 'STRIDE', 'CWE', 'OWASP MASVS'],
   },
 ];
