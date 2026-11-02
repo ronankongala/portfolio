@@ -180,8 +180,8 @@ export const WORK: WorkCard[] = [
     category: 'Mobile Security / Threat Modeling',
     repo: `${GH}android-threat-model`,
     description:
-      'An Android app security research project built on the Ghera benchmark repository. It pairs code-referenced threat models and standards mappings with a command line tool that decodes an APK with apktool and reports its manifest attack surface, scored against a ground truth dataset. A Step 1 emulator smoke test confirmed a broadcast receiver exploit fires against the Benign app and is blocked by the Secure app.',
-    stats: ['57 Ghera benchmarks', '24 threat models', '234 benchmark differences logged'],
+      'A complete Android app security research project built on the Ghera benchmark repository. It pairs code-referenced threat models and standards mappings with a command line tool that runs a 4-layer analysis on an APK (manifest attack surface, smali code patterns, interprocedural taint tracking and dynamic testing on an emulator over adb), scored against a ground truth dataset.',
+    stats: ['57 Ghera benchmarks', '25 threat models + 31 mappings', '0.64 recall / 0.49 precision'],
     tags: ['Android', 'Ghera', 'apktool', 'STRIDE', 'CWE', 'OWASP MASVS'],
   },
 ];
